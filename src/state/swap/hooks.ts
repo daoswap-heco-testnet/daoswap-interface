@@ -174,6 +174,7 @@ export function useDerivedSwapInfo(): {
     inputError = inputError ?? t('Select a token')
   }
 
+  // 禁用DOI交易
   // if (DOI_ADDRESS === inputCurrencyId) {
   //   inputError = inputError ?? t('DOI is not tradable')
   // }
