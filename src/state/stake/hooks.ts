@@ -1,10 +1,7 @@
-import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
-// import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
+// import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
 import { useMemo } from 'react'
 // TODO:Daoswap ERC20
-// import { DAI, DOI_ROPSTEN, UNI, USDC, USDT, WBTC } from '../../constants'
-// import { UNI, NTC_RINKEBY, DTC1_RINKEBY, DTC2_RINKEBY } from '../../constants'
-// import { UNI, DTC1_RINKEBY } from '../../constants'
 import { UNI, DOI_HECO_TESTNET, DAI_HECO_TESTNET } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
@@ -13,10 +10,10 @@ import { tryParseAmount } from '../swap/hooks'
 import { useTranslation } from 'react-i18next'
 
 // TODO:Daoswap Start Time
-export const STAKING_GENESIS = 1619589000
+export const STAKING_GENESIS = 1622962800
 
 // TODO:Daoswap Rewards Duration : unit - day
-export const REWARDS_DURATION_DAYS = 3
+export const REWARDS_DURATION_DAYS = 30
 
 // TODO add staking rewards addresses here
 export const STAKING_REWARDS_INFO: {
@@ -25,72 +22,10 @@ export const STAKING_REWARDS_INFO: {
     stakingRewardAddress: string
   }[]
 } = {
-  // [ChainId.MAINNET]: [
-  //   {
-  //     tokens: [WETH[ChainId.MAINNET], DAI],
-  //     stakingRewardAddress: '0xa1484C3aa22a66C62b77E0AE78E15258bd0cB711'
-  //   },
-  //   {
-  //     tokens: [WETH[ChainId.MAINNET], USDC],
-  //     stakingRewardAddress: '0x7FBa4B8Dc5E7616e59622806932DBea72537A56b'
-  //   },
-  //   {
-  //     tokens: [WETH[ChainId.MAINNET], USDT],
-  //     stakingRewardAddress: '0x6C3e4cb2E96B01F4b866965A91ed4437839A121a'
-  //   },
-  //   {
-  //     tokens: [WETH[ChainId.MAINNET], WBTC],
-  //     stakingRewardAddress: '0xCA35e32e7926b96A9988f61d510E038108d8068e'
-  //   }
-  // ],
-  // TODO:Daoswap 配置奖励池
-  [ChainId.RINKEBY]: [
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
-    //   stakingRewardAddress: '0xddD330E6EbF40E8f1C8C5B8dfDf41C2113892E04'
-    // }
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
-    //   stakingRewardAddress: '0xEd89304EfC6CdDc00b4635041356fAa8497e070C'
-    // }
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
-    //   stakingRewardAddress: '0xAF3B86C625C0585f63C5246cc90ECb00c6A98556'
-    // }
-    // 下面常用池子
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], NTC_RINKEBY],
-    //   stakingRewardAddress: '0x8a1858e0B41E98c591363FA3D3d7cd114B62F7bb'
-    // },
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
-    //   stakingRewardAddress: '0x34f7f0563625e157a273DAb6AE9e5679Cf62F038'
-    // },
-    // {
-    //   tokens: [NTC_RINKEBY, DTC1_RINKEBY],
-    //   stakingRewardAddress: '0xABB18De1e6b538F7bbecF5036821c89Dbf4537D0'
-    // },
-    // {
-    //   tokens: [DTC1_RINKEBY, DTC2_RINKEBY],
-    //   stakingRewardAddress: '0x9B992c98339cc3730bA3458898BbeC58c2C83546'
-    // }
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
-    //   stakingRewardAddress: '0x0E5DA7Cba443Ea3989c610194c0ee01F053b0505'
-    // }
-    // {
-    //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
-    //   stakingRewardAddress: '0x1097394f70E32EECf3160276011F3d188AA4465a'
-    // }
-  ],
   [ChainId.HECO_TESTNET]: [
     {
-      tokens: [WETH[ChainId.HECO_TESTNET], DAI_HECO_TESTNET],
-      stakingRewardAddress: '0xED889Bd744bfb262bE0c9090510A834082f6fd54'
-    },
-    {
-      tokens: [WETH[ChainId.HECO_TESTNET], DOI_HECO_TESTNET],
-      stakingRewardAddress: '0x40E9725C17403A8c1B3acCBbD596ea6EFc24DdF6'
+      tokens: [DOI_HECO_TESTNET, DAI_HECO_TESTNET],
+      stakingRewardAddress: '0xA25b913f09CAa362313BB0f5F20dcD817eCc3822'
     }
   ]
 }

@@ -22,27 +22,6 @@ export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C
 
 // TODO:Daoswap UNI -> DOI
 // TODO:Daoswap 添加 Rinkeby 链上的代币信息
-export const NTC_RINKEBY = new Token(
-  ChainId.RINKEBY,
-  '0x1599A352A39eb03777A1eB508eF80D17743C196D',
-  18,
-  'NTC',
-  'Noodles Test Coin'
-)
-export const DTC1_RINKEBY = new Token(
-  ChainId.RINKEBY,
-  '0xCAd7A229D56245fFaBF2D8D1aCfA8c2D64cFBe2f',
-  18,
-  'DTC1',
-  'Daoswap Test Coin 1'
-)
-export const DTC2_RINKEBY = new Token(
-  ChainId.RINKEBY,
-  '0x3032588C9B8aAc3F9C9e495426f0D8dF37eb0344',
-  18,
-  'DTC2',
-  'Daoswap Test Coin 2'
-)
 export const DOI_HECO_TESTNET = new Token(
   ChainId.HECO_TESTNET,
   '0xf9566aD895BfB111034C8625C65B03836c697479',
