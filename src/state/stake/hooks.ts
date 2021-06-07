@@ -10,7 +10,7 @@ import { tryParseAmount } from '../swap/hooks'
 import { useTranslation } from 'react-i18next'
 
 // TODO:Daoswap Start Time
-export const STAKING_GENESIS = 1622962800
+export const STAKING_GENESIS = 1623084900
 
 // TODO:Daoswap Rewards Duration : unit - day
 export const REWARDS_DURATION_DAYS = 30
@@ -25,7 +25,8 @@ export const STAKING_REWARDS_INFO: {
   [ChainId.HECO_TESTNET]: [
     {
       tokens: [DOI_HECO_TESTNET, DAI_HECO_TESTNET],
-      stakingRewardAddress: '0xA25b913f09CAa362313BB0f5F20dcD817eCc3822'
+      // stakingRewardAddress: '0xA25b913f09CAa362313BB0f5F20dcD817eCc3822'
+      stakingRewardAddress: '0x8E3131F0bC87a7B93cF8Ff5B13D62e2abC7D7264'
     }
   ]
 }
