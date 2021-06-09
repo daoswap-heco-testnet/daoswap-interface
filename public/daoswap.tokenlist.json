@@ -38,6 +38,22 @@
     },
     {
       "chainId": 256,
+      "address": "0x7908e858E2769923bB9eb75221765656D8B8E9AC",
+      "name": "Daoswap Test Coin 3",
+      "symbol": "DTC3",
+      "decimals": 18,
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
+    },
+    {
+      "chainId": 256,
+      "address": "0x921DA610Ae4ED9957C1ed1A7FbbF474B7eD77993",
+      "name": "Daoswap Test Coin 4",
+      "symbol": "DTC4",
+      "decimals": 18,
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
+    },
+    {
+      "chainId": 256,
       "address": "0x60d64Ef311a4F0E288120543A14e7f90E76304c6",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
