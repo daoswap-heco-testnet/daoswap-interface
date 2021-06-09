@@ -1,6 +1,6 @@
 {
   "name": "Daoswap",
-  "logoURI": "https://heco-app.daoswap.global/daoswap.svg",
+  "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg",
   "keywords": ["defi", "doi"],
   "timestamp": "2021-04-15T01:40:34.305Z",
   "tokens": [
@@ -10,7 +10,7 @@
       "name": "Daoswap",
       "symbol": "DOI",
       "decimals": 18,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -18,7 +18,7 @@
       "name": "Daoswap USDT",
       "symbol": "DOIUSDT",
       "decimals": 18,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -26,7 +26,7 @@
       "name": "Daoswap Test Coin 1",
       "symbol": "DTC1",
       "decimals": 18,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -34,7 +34,7 @@
       "name": "Daoswap Test Coin 2",
       "symbol": "DTC2",
       "decimals": 18,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -42,7 +42,7 @@
       "name": "Dai Stablecoin",
       "symbol": "DAI",
       "decimals": 18,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -50,7 +50,7 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "decimals": 6,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -58,7 +58,7 @@
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     },
     {
       "chainId": 256,
@@ -66,7 +66,7 @@
       "name": "Heco-Peg HUSD Token",
       "symbol": "HUSD",
       "decimals": 18,
-      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://test.app.heco.daoswap.global/daoswap.svg"
     }
   ],
   "version": { "major": 0, "minor": 0, "patch": 0 }
