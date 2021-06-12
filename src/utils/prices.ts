@@ -5,7 +5,7 @@ import { Field } from '../state/swap/actions'
 import { basisPointsToPercent } from './index'
 
 // 修改手续费比例
-const BASE_FEE = new Percent(JSBI.BigInt(20), JSBI.BigInt(10000))
+const BASE_FEE = new Percent(JSBI.BigInt(30), JSBI.BigInt(10000))
 const ONE_HUNDRED_PERCENT = new Percent(JSBI.BigInt(10000), JSBI.BigInt(10000))
 const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 
