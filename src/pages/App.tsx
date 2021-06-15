@@ -26,6 +26,7 @@ import RemoveLiquidity from './RemoveLiquidity'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import Swap from './Swap'
 import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
+import Governace from './Governace'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -98,6 +99,7 @@ export default function App() {
               <Route exact strict path="/migrate/v1/:address" component={MigrateV1Exchange} />
               <Route exact strict path="/doi/:currencyIdA/:currencyIdB" component={Manage} />
               <Route exact strict path="/doi-history/:currencyIdA/:currencyIdB" component={ManageHistory} />
+              <Route exact strict path="/governace" component={Governace} />
               <Route component={RedirectPathToSwapOnly} />
             </Switch>
           </Web3ReactManager>

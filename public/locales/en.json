@@ -327,5 +327,9 @@
   "Claim DOI": "Claim DOI",
 
   "DOI Stake Activity": "Activity",
-  "DOI Stake Ended": "Ended"
+  "DOI Stake Ended": "Ended",
+
+  "Governace": "Governace",
+  "Pledging DOI to share 0.1% fees of all pool.": "Pledging DOI to share 0.1% fees of all pool.",
+  "Function development, please wait patiently...": "Function development, please wait patiently..."
 }

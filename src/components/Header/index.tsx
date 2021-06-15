@@ -245,6 +245,9 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/doi'}>
             DOI
           </StyledNavLink>
+          <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
+            {t('Governace')}
+          </StyledNavLink>
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
